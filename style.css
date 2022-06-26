@@ -1,0 +1,91 @@
+/*
+	Syntax: 
+
+	selector {
+		property:  value; <----declaration
+	}
+
+	selectors= id, class, tag, universal
+
+	id= #
+	class= .
+	tag= tagName
+	universal= * <----targets all elements
+
+*/
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+h1,h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+	border: 5px solid lavender;
+	border-radius: 100%;
+}
+
+#landing{
+	/*vh- viewport height --> determined or measured percentage of the height of the device you are viewing your webpage in*/
+	height: 90vh;
+
+	/*flexbox --> allows us to arrange or layout elements inside our landing section horizontally and vertically
+	by default, display:  flex arranges the elements inisde a parent element*/
+	display: flex;
+
+	/*flex-direction: column; --> arranges flex items into a column*/
+	flex-direction: column;
+
+	/*align-items:  center; --> arranges all flex items to be centered horizontally*/
+	align-items: center;
+
+	/*justify-content:  center; --> arranges elements horizontally if the flex items are in a row however, it arranges elements vertically if the flex items are in column*/
+	justify-content: center;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+#gallery {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #FFF08D;
+	border-radius: 6px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h3	{
+	color: #007bff;
+}
+
+.tools {
+	/*border--> line around the element*/
+	border: 5px solid #f2f2f2;
+
+	/*margin--> space outside the element*/
+	margin: 20px;
+
+	/*padding--> space inside the element*/
+	padding: 25px;
+	height: 200px;
+	/*percentage as measurement for width based on the total width
+	of the parent element*/
+	width: 75%;
+}
+
+/*makes the scrolling of page smooth*/
+html	{
+	scroll-behavior: smooth;
+}
